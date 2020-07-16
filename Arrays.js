@@ -144,3 +144,6 @@ secretMessage.unshift('Programming');
 secretMessage.splice(6, 10, 'know');
 
 console.log(secretMessage.join(' '));
+
+// you can mutate a const array, even .shift(); it
+// but you can't reassign a const array
