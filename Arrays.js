@@ -1,3 +1,5 @@
+// Challenge given by Codecademy
+
 // array literal
 let arr1 = [1, 2, 3];
 let arr2 = ['hello', 4, false];
@@ -121,3 +123,24 @@ console.log(nestedArr[1][0])  // Prints 2
 
 let numberClusters = [[1, 2], [3, 4], [5, 6]];
 const target = numberClusters[2][1];  // 6
+
+let secretMessage = ['Learning', 'is', 'not', 'about', 'what', 'you', 'get', 'easily', 'the', 'first', 'time,', 'it', 'is', 'about', 'what', 'you', 'can', 'figure', 'out.', '-2015,', 'Chris', 'Pine,', 'Learn', 'JavaScript'];
+
+console.log(secretMessage.length);
+secretMessage.pop();
+console.log(secretMessage.length);
+
+secretMessage.push('to', 'Program');
+
+secretMessage[7] = 'right';
+
+// remove first string of array
+secretMessage.shift();
+
+// Add 'Programming' to the beginning
+secretMessage.unshift('Programming');
+
+// Replace the strings get, right, the, first, time with know
+secretMessage.splice(6, 10, 'know');
+
+console.log(secretMessage.join(' '));
