@@ -57,3 +57,24 @@ const checkConsistentOutput = (inputFunc, inputVal) => {
 }
 
 checkConsistentOutput(addTwo, 5);
+
+// practice
+const isThisFuncAHigherOrderFunc = (op) => {
+   if(op === 'add') {
+     return (val) => val + 1;
+   }
+
+   else if(op === 'sub') {
+      return (val) => val - 1;
+   }
+
+   else {
+      return 'invalid input';
+   }
+}
+
+const value = isThisFuncAHigherOrderFunc('add');
+
+if(value !== 'invalid input') {
+   console.log(value(2));
+}
