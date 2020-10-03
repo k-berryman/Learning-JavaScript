@@ -69,11 +69,11 @@ class Garage {
       throw new Error('Only vehicles are allowed in here!');
     }
 
-    else if(Garage.vehicles.length >= capacity) {
+    else if(this.vehicles.length >= capacity) {
       throw new Error('Sorry, we\'re full');
     }
 
-    Garage.vehicles.push(newVehicle);
+    this.vehicles.push(newVehicle);
     return 'Vehicle added!';
   }
 }
